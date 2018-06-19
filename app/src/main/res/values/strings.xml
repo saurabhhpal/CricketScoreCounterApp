@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Cricket Score Count</string>
+    <string name="TeamA">Ind</string>
+    <string name="TeamB">Aus</string>
+    <string name="InitialScore">0</string>
+    <string name="scoreSeparator">-</string>
+    <string name="OverText">Overs</string>
+    <string name="CompletedOvers">0.0</string>
+    <string name="One">1</string>
+    <string name="Two">2</string>
+    <string name="Three">3</string>
+    <string name="Four">4</string>
+    <string name="Six">6</string>
+    <string name="Wide">1</string>
+    <string name="NB">1</string>
+    <string name="Extras_text">Extras Ind -</string>
+    <string name="Runs_By_Ball">Runs By Ball</string>
+    <string name="WD">WD</string>
+    <string name="NB_Text">NB</string>
+    <string name="WKT_IND_Text">WKT -IND</string>
+    <string name="WKT_AUS_Text">WKT -IND</string>
+    <string name="RESET_SCORE_Text">RESET SCORES</string>
+    <string name="Result_Text">Result</string>
 </resources>

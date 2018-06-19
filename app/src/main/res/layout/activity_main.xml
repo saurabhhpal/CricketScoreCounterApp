@@ -40,7 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:text="IND"
+                        android:text="@string/TeamA"
                         android:textColor="#FFEE58"
                         android:textSize="36sp"
                         android:textStyle="bold" />
@@ -51,7 +51,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/team_a_name"
                         android:gravity="center"
-                        android:text="0"
+                        android:text="@string/InitialScore"
                         android:textColor="#FFEE58"
                         android:textSize="36sp"
                         android:textStyle="bold" />
@@ -63,7 +63,7 @@
                         android:layout_marginLeft="3dp"
                         android:layout_marginRight="3dp"
                         android:layout_toRightOf="@id/team_a_score"
-                        android:text="-"
+                        android:text="@string/scoreSeparator"
                         android:textColor="#FFEE58"
                         android:textSize="36sp" />
 
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/score_separator_team_a"
                         android:paddingTop="6dp"
-                        android:text="0"
+                        android:text="@string/InitialScore"
                         android:textColor="#FFEE58"
                         android:textSize="28sp"
                         android:textStyle="bold" />
@@ -90,7 +90,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text=" Overs"
+                        android:text="@string/OverText"
                         android:textColor="#FFEE58"
                         android:textSize="26sp"
                         android:textStyle="bold|italic" />
@@ -101,7 +101,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:layout_marginLeft="8dp"
-                        android:text="0.0"
+                        android:text="@string/CompletedOvers"
                         android:textColor="#FFEE58"
                         android:textSize="26sp"
                         android:textStyle="bold|italic" />
@@ -122,7 +122,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_lens_black_24dp"
                         android:onClick="addOneToTeamA"
-                        android:text="1"
+                        android:text="@string/One"
                         android:textColor="#FFEE58"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -134,7 +134,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_lens_black_24dp"
                         android:onClick="addTwoToTeamA"
-                        android:text="2"
+                        android:text="@string/Two"
                         android:textColor="#FFEE58"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -146,7 +146,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_lens_black_24dp"
                         android:onClick="addThreeToTeamA"
-                        android:text="3"
+                        android:text="@string/Three"
                         android:textColor="#FFEE58"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -158,7 +158,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_lens_black_24dp"
                         android:onClick="addFourToTeamA"
-                        android:text="4"
+                        android:text="@string/Four"
                         android:textColor="#FFEE58"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -170,7 +170,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/ic_lens_black_24dp"
                         android:onClick="addSixToTeamA"
-                        android:text="6"
+                        android:text="@string/Six"
                         android:textColor="#FFEE58"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -179,7 +179,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Runs By Ball"
+                    android:text="@string/Runs_By_Ball"
                     android:textColor="#FFEE58"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -226,7 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:text="AUS"
+                        android:text="@string/TeamB"
                         android:textColor="#1B5E20"
                         android:textSize="36sp"
                         android:textStyle="bold" />
@@ -237,7 +237,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/team_b_name"
                         android:gravity="center"
-                        android:text="0"
+                        android:text="@string/InitialScore"
                         android:textColor="#1B5E20"
                         android:textSize="36sp"
                         android:textStyle="bold" />
@@ -249,7 +249,7 @@
                         android:layout_marginLeft="3dp"
                         android:layout_marginRight="3dp"
                         android:layout_toRightOf="@id/team_b_score"
-                        android:text="-"
+                        android:text="@string/scoreSeparator"
                         android:textSize="36sp" />
 
                     <TextView
@@ -258,7 +258,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/score_separator_team_b"
                         android:padding="4dp"
-                        android:text="0"
+                        android:text="@string/InitialScore"
                         android:textColor="#1B5E20"
                         android:textSize="28sp"
                         android:textStyle="bold" />
@@ -274,7 +274,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text=" Overs"
+                        android:text="@string/OverText"
                         android:textColor="#1B5E20"
                         android:textSize="26sp"
                         android:textStyle="bold|italic" />
@@ -285,7 +285,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:layout_marginLeft="8dp"
-                        android:text="0.0"
+                        android:text="@string/CompletedOvers"
                         android:textColor="#1B5E20"
                         android:textSize="26sp"
                         android:textStyle="bold|italic" />
@@ -306,7 +306,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/ic_lens_black_24dp"
                             android:onClick="addOneToTeamB"
-                            android:text="1"
+                            android:text="@string/One"
                             android:textColor="#1B5E20"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -318,7 +318,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/ic_lens_black_24dp"
                             android:onClick="addTwoToTeamB"
-                            android:text="2"
+                            android:text="@string/Two"
                             android:textColor="#1B5E20"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -342,7 +342,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/ic_lens_black_24dp"
                             android:onClick="addFourToTeamB"
-                            android:text="4"
+                            android:text="@string/Four"
                             android:textColor="#1B5E20"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -354,7 +354,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/ic_lens_black_24dp"
                             android:onClick="addSixToTeamB"
-                            android:text="6"
+                            android:text="@string/Six"
                             android:textColor="#1B5E20"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -364,7 +364,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Runs By Ball"
+                        android:text="@string/Runs_By_Ball"
                         android:textColor="#1B5E20"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
@@ -405,7 +405,7 @@
                 android:layout_weight="1"
                 android:gravity="left"
                 android:padding="6dp"
-                android:text="Extras Ind -"
+                android:text="@string/Extras_text"
                 android:textColor="#FFEE58"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -428,7 +428,7 @@
                 android:layout_weight="1"
                 android:gravity="left"
                 android:padding="6dp"
-                android:text="Extras Aus -"
+                android:text="@string/Extras_text"
                 android:textColor="#43A047"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -465,7 +465,7 @@
                 android:gravity="center"
                 android:onClick="faultTeamA"
                 android:padding="2dp"
-                android:text="WD"
+                android:text="@string/WD"
                 android:textColor="#FFEE58"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -478,7 +478,7 @@
                 android:background="@drawable/ic_lens_black_24dp"
                 android:gravity="center"
                 android:onClick="faultTeamA"
-                android:text="NB"
+                android:text="@string/NB_Text"
                 android:textColor="#FFEE58"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -491,7 +491,7 @@
                 android:background="@drawable/ic_lens_black_24dp"
                 android:gravity="center"
                 android:onClick="faultTeamB"
-                android:text="WD"
+                android:text="@string/WD"
                 android:textColor="#43A047"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -504,7 +504,7 @@
                 android:background="@drawable/ic_lens_black_24dp"
                 android:gravity="center"
                 android:onClick="faultTeamB"
-                android:text="NB"
+                android:text="@string/NB_Text"
                 android:textColor="#43A047"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -528,7 +528,7 @@
                 android:layout_weight="1"
                 android:background="#311B92"
                 android:onClick="outTeamA"
-                android:text="WKT -IND"
+                android:text="@string/WKT_IND_Text"
                 android:textColor="#FFEE58"
                 android:textStyle="bold" />
 
@@ -542,13 +542,22 @@
                 android:textStyle="bold" />
 
             <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#795548"
+                android:onClick="showResult"
+                android:text="@string/Result_Text"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/wkt_b"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#1B5E20"
                 android:onClick="outTeamB"
-                android:text="WKT-AUS"
+                android:text="@string/WKT_AUS_Text"
                 android:textColor="#FAFAFA"
                 android:textStyle="bold" />
 

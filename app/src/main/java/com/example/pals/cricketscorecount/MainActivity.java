@@ -253,20 +253,7 @@ public class MainActivity extends AppCompatActivity {
         faultTeamB = 0;
         displayFaultTeamA(faultTeamA);
         displayFaultTeamB(faultTeamB);
-
-//        addOneInTeamABt.setEnabled(true);
-//        addTwoInTeamABt.setEnabled(true);
-//        addThreeInTeamABt.setEnabled(true);
-//        addFourInTeamABt.setEnabled(true);
-//        addSixInTeamABt.setEnabled(true);
-//        wktTeamABt.setEnabled(true);
-//
-//        addOneInTeamBBt.setEnabled(true);
-//        addTwoInTeamBBt.setEnabled(true);
-//        addThreeInTeamBBt.setEnabled(true);
-//        addFourInTeamBBt.setEnabled(true);
-//        addSixInTeamBBt.setEnabled(true);
-//        wktTeamBBt.setEnabled(true);
+        resetOvers();
 
         AlertDialog alert = new AlertDialog.Builder(this).create();
         alert.setTitle("ALert");
@@ -349,6 +336,61 @@ public class MainActivity extends AppCompatActivity {
             runListView.setAdapter(runAdapter);
             runAdapter.notifyDataSetChanged();
         }
+    }
+
+    public  void showResult(View view){
+        TextView teamA_score_tv = findViewById(R.id.team_a_score);
+        TextView teamB_score_tv = findViewById(R.id.team_b_score);
+
+        AlertDialog alert = new AlertDialog.Builder(this).create();
+        Log.d("Team A" , String.valueOf(scoreTeamA) + String.valueOf(scoreTeamB));
+        if(Integer.parseInt(String.valueOf(teamA_score_tv.getText())) > Integer.parseInt(String.valueOf(teamB_score_tv.getText()))){
+
+//            AlertDialog alert = new AlertDialog.Builder(this).create();
+            alert.setTitle("Result");
+            alert.setMessage("Team India Won ");
+            alert.setButton(Dialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            alert.show();
+        }else if (scoreTeamB > scoreTeamA){
+            alert.setTitle("Result");
+            alert.setMessage("Team Aus Won ");
+            alert.setButton(Dialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            alert.show();
+        }
+        else {
+            alert.setTitle("Result");
+            alert.setMessage("Draw ");
+            alert.setButton(Dialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            alert.show();
+        }
+    }
+
+    public void resetOvers(){
+        TextView overTeamATv = findViewById(R.id.over_tv_team_a);
+        TextView overTeamBTv = findViewById(R.id.over_tv_team_b);
+        overTeamATv.setText("0.0");
+        overTeamBTv.setText("0.0");
     }
 
 }
